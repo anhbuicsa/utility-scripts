@@ -1,0 +1,6 @@
+1. Get number of services
+  kubectl get svc -A | awk '$4 ~ /172\./ {print $0}' | wc -l
+2. List number of node in nodepool
+  kubectl get nodes -l cloud.google.com/gke-nodepool=<nodepool-name>
+3. deployment log: kubectl -n iam logs -f deployment/account-auth-service-primary
+
