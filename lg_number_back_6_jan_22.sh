@@ -5,7 +5,7 @@ TMP_DIR="/Users/anhbv2/Documents/"
 FILEN="$TMP_DIR""dirs"".txt"
 FIND_DIRS=$(cat <<-END
 	/Users/anhbv2/Documents/Workspace/Workings
-	/Users/anhbv2/Documents/Workspace/VinID/notes
+	/Users/anhbv2/Documents/Workspace/notes
 END
 )
 FIND_DIRS=`echo -e "$FIND_DIRS" | awk '{gsub(/^[[:space:]]+|[[:space:]]+$/,"",$0); print $0}'`
